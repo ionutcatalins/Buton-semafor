@@ -1,15 +1,10 @@
-let a = 1;
-
 function button() {
-    if(a == 0) {
-        document.getElementById("btn").classList = "btn btn-danger"
-    } else if (a == 1) {
-        document.getElementById("btn").classList = "btn btn-warning"
-    } else if (a == 2) {
-        document.getElementById("btn").classList = "btn btn-success"       
+    let a = document.getElementById("btn").classList;
+    if(a == "btn btn-danger") {
+        document.getElementById("btn").classList = "btn btn-warning";
+    } else if (a == "btn btn-warning") {
+        document.getElementById("btn").classList = "btn btn-success";
+    } else if (a == "btn btn-success") {
+        document.getElementById("btn").classList = "btn btn-danger";       
     }
-    ++a;
-    if (a == 3) {
-        a = 0;
-    }  
 }
