@@ -1,8 +1,6 @@
 function color() {     
     let colors = document.getElementById("btn").className;
-          
     switch(colors) {
-
         case 'btn btn-danger':
             document.getElementById("btn").classList = 'btn btn-warning';
             break;
